@@ -97,7 +97,7 @@ void calc() {
     a = intcheck();
  
     cout << "\nEnter the second number: ";
-    cin >> b;
+    b = intcheck();
     
     cout << "\nEnter the operator (+,-,*,/,%): ";
     while (1) {
@@ -146,7 +146,7 @@ void poly() {
 
     for (int i = 0; i <= power; i++) {
         cout << "\nEnter the constant for x^" << i << " :";
-        cin >> arr[i];
+        arr[i] = intcheck();
     }
     cout << "\nThis is your polynomial equation: ";
     for (int i = power; i >= 0; i--) {
